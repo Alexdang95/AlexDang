@@ -1,4 +1,4 @@
-alert('Hello World!');
+alert('Working Progress - Dont Judge Meh!👷‍♂️');
 
 let emailElement = document.querySelector('#email');
 let messageElement = document.querySelector('#message');
