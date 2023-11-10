@@ -10,11 +10,7 @@ h1, h2, h3, h4 {
 
 .container {
     max-width: 840px;
-    margin: 0 auto;
-}
-
-.container > div {
-    margin: 80px auto;
+    margin: 80px auto; /* Adjusted margin */
 }
 
 .intro {
@@ -23,7 +19,7 @@ h1, h2, h3, h4 {
 
 h1 {
     font-weight: bold;
-    text-decoration: underline;
+    font-size: xx-large;
 }
 
 li, p, a {
@@ -32,11 +28,14 @@ li, p, a {
 
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    justify-content: center; /* Center the columns horizontally */
 }
 
 .i-am, .i-like {
     text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .about-list {
@@ -44,14 +43,18 @@ li, p, a {
 }
 
 @media (max-width: 480px) {
-    .about-grid {
-        grid-template-columns: 100%;
+    .about-grid,
+    .about-list,
+    .i-am,
+    .i-like {
+        text-align: center;
+        max-width: 100%;
     }
 }
 
 .projects-heading,
 .project-image-wrapper h4,
-.links h3 { 
+.links h3 {
     text-align: center;
 }
 
@@ -118,8 +121,8 @@ li, p, a {
 }
 
 .links {
-    text-align: left; /* Align links to the left */
-    margin-bottom: 8px; 
+    text-align: left;
+    margin-bottom: 8px;
     width: 30%;
 }
 
@@ -130,6 +133,7 @@ li, p, a {
 
 .links-list li {
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .links-list a {
@@ -177,5 +181,4 @@ form input[type="submit"] {
 hr {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.0));
-}
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.75), rgba(0, 0,
