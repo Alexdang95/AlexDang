@@ -1,4 +1,4 @@
-alert('Working Progress - Dont Judge Meh!👷‍♂️');
+alert('Working Progress👷‍♂️');
 
 let emailElement = document.querySelector('#email');
 let messageElement = document.querySelector('#message');
@@ -16,4 +16,6 @@ submitButton.addEventListener('click', function(e) {
 		alert('Ooops! Email address is not valid, please try again')
 	}
 })
+
+
 
